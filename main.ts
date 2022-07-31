@@ -1,5 +1,5 @@
 pins.setPull(DigitalPin.P2, PinPullMode.PullUp)
-basic.forever(function on_forever() {
+basic.forever(function () {
     if (pins.digitalReadPin(DigitalPin.P2) == 0) {
         basic.showNumber(1)
         pins.digitalWritePin(DigitalPin.P0, 0)
@@ -13,5 +13,4 @@ basic.forever(function on_forever() {
         pins.digitalWritePin(DigitalPin.P1, 0)
         basic.showNumber(0)
     }
-    
 })
